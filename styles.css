@@ -1,0 +1,238 @@
+ 
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: visible;
+  }
+  .navbar {
+    width: auto;
+    background-color: rgba(27,44,75,255);
+    height: 100px;
+  }
+  .navbar h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+  .navbar p {
+    font-size: 20px;
+    color: white;
+    margin: 5px 0;
+    line-height: 1.2;
+  }
+  .navbar a {
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+  }
+  .showcase {
+    height: 400px;
+    background-color: rgba(27,44,75,255);}
+  /* Adds a shadow below the image */
+  .showcase  {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adds some padding on the form content */
+  .grid {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 50% 40%;
+  }
+  /* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(6, 148, 243);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  margin-top: 200px;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: white;
+}
+.card_text {
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.card_head {
+  background-color: rgb(61, 60, 60);
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+}
+.card_head a {
+  font-size: 18px;
+  margin-left: 15px;
+  color: white;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+.title_footer{
+  font-size: 30px;
+  color: black;
+  margin-top: 400px;
+}
+.title_footer a{
+  font-size: 20px;
+  color: black;
+  margin-top: 250px;
+}
+.title_footer p{
+  font-size: 30px;
+  color: black;
+  margin-top: 200px;
+}
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover{
+  transform: scale(1.5);
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gridcontainer {
+  display: grid;
+  margin: auto;
+  max-width: 990px;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-columns: 25% repeat(3, 1fr 12.5925%) 1fr 25%;
+}
+.table{
+  width: 100%;
+  margin-top: 60px;
+  margin-left: 200px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #272727;
+}
+.table p{
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}

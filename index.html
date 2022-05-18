@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="navbar">
+    <div class="container flex">
+        <br><br><br><br>
+        <center>
+            <h1>Simple Pricing!</h1>
+            <p>The most advanced customer support tools with a simple</p>
+            <p>and affardable pricing. And you can always try for 30 days.</p>
+            <p>Free!</p>
+        </center>
+      </div>
+   </div>
+   <section class="showcase">
+    <div class="container">
+      <ul class="cards">
+        <li class="cards_item">
+          <div class="zoom">
+            <div class="card">
+              <div class="card_head"><a>BASIC</a></div>
+              <div class="card_image"><img src="./1.jpg"></div>
+              <div class="card_content">
+                <p class="card_text">10 Project</p>
+                <p class="card_text">10 Poges</p>
+                <p class="card_text">100 MB Disk Space</p>
+                <center><button id="card_btn"class="btn card_btn">BUY NOW</button></center>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="zoom">
+            <div class="card">
+              <div class="card_head"><a>STANDARD</a> <a style="margin-left: 90px;">save 15%</a></div>
+              <div class="card_image"><img src="./2.jpg"></div>
+              <div class="card_content">
+                <p class="card_text">20 Project</p>
+                <p class="card_text">20 Poges</p>
+                <p class="card_text">200 MB Disk Space</p>
+                <center><button id="card_btn2"class="btn card_btn">BUY NOW</button></center>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="zoom">
+            <div class="card">
+              <div class="card_head"><a>ADVANCED</a></div>
+              <div class="card_image"><img src="./3.jpg" width="120%" height="120%"></div>
+              <div class="card_content">
+                <p class="card_text">40 Project</p>
+                <p class="card_text">40 Poges</p>
+                <p class="card_text">500 MB Disk Space</p>
+                <center><button id="card_btn3"class="btn card_btn">BUY NOW</button></center>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+       </div>
+    </div>
+  </section>
+  <div class="title_footer">
+    <center>Frequently Asked Question
+      <table class="table">
+        <tr>
+            <td>How does Free trial work?</td>
+            <td>Can I cancel any time?</td>
+        </tr>
+        <tr>
+            <td><p>An acquisition model where a product/service is offered to </p>
+               <p>customers for a limited period of time </p>
+               <p>for free, so that they can learn about the product </p>
+               <p>and discover value before actually paying for it.</p>
+              </td>
+            <td><p>Want to cancel a membership? Head to NOW Membership,</p>
+              <p> hit Cancel membership next to the one you don't want any more,</p>
+              <p>then follow the onscreen steps.  </p></td>
+        </tr>
+    </table>
+    </center>
+   
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <center>
+      <img src="./jempol.jpg" alt="">
+      <p>SUCCESS!!</p>
+    </center>
+  </div>
+
+</div>
+</body>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("card_btn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("card_btn2");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("card_btn3");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</html>
